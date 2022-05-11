@@ -9,5 +9,9 @@
           dest: .
       - name: Install sprutcommerce
         apt:
-          name: sprutcommerce
+          name: nodejs
           state: present
+      - name: npm install
+        npm:
+          name: forever -g
+          path: /app/location
