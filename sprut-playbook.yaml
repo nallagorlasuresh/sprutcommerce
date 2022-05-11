@@ -4,14 +4,8 @@
     hosts: all
     tasks:
       - name: download the debian file
-        get_url:
-          url: https://deb.nodesource.com/setup_14.x
-          dest: .
+        command:
+          cmd: curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
       - name: Install nodejs
-        apt:
-          name: nodejs
-          state: present
-      - name: npm install
-        npm:
-          name: nodejs
-          path: /app/location
+        command:
+          cmd: sudo apt-get install -y nodejs
