@@ -7,7 +7,7 @@
         get_url:
           url: https://deb.nodesource.com/setup_14.x
           dest: .
-      - name: Install sprutcommerce
+      - name: Install nodejs
         apt:
           name: nodejs
           state: present
