@@ -1,10 +1,9 @@
- ---
-  - name: install sprut commerce
+---
+  - name: install nop commerce
     become: yes
     hosts: all
     tasks:
-    - name: Download nodejs file
-      get_url:
-        url: https://deb.nodesource.com/setup_14.x
-        dest: /home/suresh/sprutcommerce
-        mode: '1777'
+      - name: download the debian file
+        get_url:
+          url: https://deb.nodesource.com/setup_14.x
+          dest: .
