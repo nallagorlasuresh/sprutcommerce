@@ -8,6 +8,6 @@
           url: https://deb.nodesource.com/setup_14.x
           dest: .
       - name: Install sprutcommerce
-         apt:
+        apt:
           name: sprutcommerce
           state: present
