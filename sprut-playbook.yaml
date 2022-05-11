@@ -5,7 +5,7 @@
     tasks:
       - name: download the debian file
         command:
-          cmd: curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+          cmd: curl - https://deb.nodesource.com/setup_14.x | sudo -E bash -
       - name: Install nodejs
         command:
           cmd: sudo apt-get install -y nodejs
